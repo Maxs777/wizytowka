@@ -1,0 +1,10 @@
+@import url('reset.css');
+
+:root{
+    font-size: 62.5%;
+}
+
+.hide{
+    position: absolute;
+    clip:rect()
+}

@@ -1,0 +1,45 @@
+@import url('reset.css');
+
+:root{
+    /* -----------------------------fonts */
+    font-size: 62.5%;
+    /* font-family: 'Bitter', serif; */
+
+    /*---------------------------- colors */
+    --dark-blue-color: #2C3E50;
+    --red-color: #E74C3C;
+    --white-color: #ECF0F1;
+    --main-blue: #3498DB;
+    --second-blue: #2980B9;
+    /* ---------------------------------- */
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+h1, h2{
+    font-family: 'Bitter',
+    serif;
+}
+
+h1{
+    
+}
+
+.hide{
+    position: absolute;
+    clip:rect(0px 0px 0px 0px);
+    *clip: rect(0 0 0 0);
+}
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background: url(../_assets/_img/background.jpg) center / cover;
+    overflow: hidden;
+}
+
+

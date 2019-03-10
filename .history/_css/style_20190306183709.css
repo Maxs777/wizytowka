@@ -1,0 +1,22 @@
+@import url('reset.css');
+
+:root{
+    font-size: 62.5%;
+    /* colors */
+    --dark-blue-color: #2C3E50;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.hide{
+    position: absolute;
+    clip:rect(0px 0px 0px 0px);
+    *clip: rect(0 0 0 0);
+    color: var(--dark-blue-color)
+}
+

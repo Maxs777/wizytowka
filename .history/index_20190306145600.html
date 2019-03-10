@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="_css/style.css">
+    <title>Strona-wizytówka</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+function monthName ( month, name ){
+let text = "";
+switch(month){
+case ("grudzień" || "syczeń" || "luty"):
+text = name + " jeździ na sankach";
+break;
+case ("marzec" || "kwiecień" || "maj") :
+text = name + " chodzi po kałużach";
+break;
+case ("czerwiec" || "lipiec" || "sierpień") :
+text = name + " się opala";
+break;
+case ("wrzesień" || "lipiec" || "sierpień") :
+text = name + " zbiera liście";
+break;
+}
+return text;
+}
