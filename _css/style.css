@@ -3,41 +3,39 @@
 :root{
     /* -----------------------------fonts */
     font-size: 62.5%;
-    /* font-family: 'Bitter', serif; */
+    /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Bree Serif', serif; */
 
     /*---------------------------- colors */
-    --dark-blue-color: #2C3E50;
-    --red-color: #E74C3C;
-    --white-color: #ECF0F1;
-    --main-blue: #3498DB;
-    --second-blue: #2980B9;
+    --dark-blue-color: #1e2d34;
+    --gray-color: #bcbebd;
+    --main-white-color: #fff8f6;
+    --main-gray-blue: #678899;
+    --sky-color: #718289;
+    background-color: var(--main-white-color);
+
     /* ---------------------------------- */
 }
+
+/* wielkość fontów */
+
+:root{
+    --main-h1-font-size: 4.25rem;
+    --main-h1-line-height: 5.2rem;
+    --main-h2-font-size: 2.6rem;
+    --main-h2-line-height: 2.6rem;
+    --main-h3-font-size: 1.6rem;
+    --main-h3-line-height: 2.6rem;
+    --main-p-font-size: 2rem;
+    --main-p-line-height: 2rem;
+}
+
+/* -------------------- */
 
 *,
 *::after,
 *::before{
     box-sizing: border-box;
-}
-
-h1, h2{
-    font-family: 'Bitter',
-    serif;
-}
-
-h1{
-    font-size: 4.25rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-nav{
-    background-color: rgba(255, 255, 255, .2);
-    height: 10vh;
-    position: sticky;
-    text-decoration: none;
-
-
 }
 
 .hide{
@@ -46,19 +44,211 @@ nav{
     *clip: rect(0 0 0 0);
 }
 
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------------------------------------------------------------------------------*/
+/* --------------------------------------------FONTY------------------------------------*/
+h2{
+    font-size: 6rem;
+    font-family: 'Bree Serif',
+    serif;
+    margin: 5rem 0;
+}
+
+h2 + p{
+    font-size: 2em;
+    margin-bottom: 3rem;
+}
+
+p{
+    font-size: var(--main-p-font-size);
+    line-height: var(--main-p-line-height);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+    font-size: var(--main-h3-font-size);
+    line-height: var(--main-h3-line-height);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Bree Serif', serif;
+    font-weight: bold;
+
+}
+
+
+/* -------------------------------------------------------------------------------------*/
+
+/* ---------------------------------------------NAV-------------------------------------*/
+nav{
+    background-color: rgba(255, 255, 255, .1);
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li > a{
+    color: var(--dark-blue-color);
+    text-decoration: none;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav > ul > li{
+     padding: 3rem;
+     text-decoration: none;
+     align-self: center;
+     font-size: 2.2rem;
+     line-height: 2.2rem;
+     font-family: 'Bree Serif',
+     serif;
+}
+/* -------------------------------------------------------------------------------------*/
+/* -------------------------------------------HEADER------------------------------------*/
 header{
+    background: url('/_assets/_img/background.jpg') center/cover no-repeat;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header h1{
+    font-size: calc(var(--main-h1-font-size)*2);
+    line-height: calc(var(--main-h1-line-height)*2);
+    font-weight: bold;
+    font-family: 'Bree Serif',
+    serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header > .social-media ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header > .social-media li a>i{
+    font-size: 6rem;
+    color: black;
+    padding: .7rem;
+}
+
+header>.social-media li{
+    border-radius: 50%;
+    border: 3px solid var(--main-white-color);
+    margin: 4rem;
+    background-color: white;
+    transition: 1s;
+    z-index: 1;
+}
+
+header>.social-media li:hover {
+    border: 3px solid var(--dark-blue-color);
+}
+
+
+
+header>.social-media li:nth-child(odd) {
+    padding-left: 3px;
+}
+
+/* -------------------------------------------------------------------------------------*/
+
+
+figure img[alt="Author"]{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 3px var(--dark-blue-color) solid;
+    transform: rotate(-11deg);
+}
+
+
+
+section:nth-child(2) .row:last-child img{
+    width: 20rem;
+
+}
+
+
+/* -------------------------------------------oMnie------------------------------------*/
+section:first-child figure{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    /* grid-template-columns: 1fr; */
+    font-size: var(--main-p-font-size);
+    background-color: var(--main-gray-blue);
+    border-radius: 35px 0px 35px 0px;
+    -moz-border-radius: 35px 0px 35px 0px;
+    -webkit-border-radius: 35px 0px 35px 0px;
+    border: 3px solid var(--main-white-color);
+    padding: 4rem;
+    width: 80vw;
+}
+
+section:first-child figure img{
+    margin: 3rem;
+}
+/* --------------------------------Umiejętności----------------------------------------------------*/
+.skill-name{
+    
+}
+
+
+
+/* --------------------------------MOJE PORTFOLIO----------------------------------------------------*/
+
+
+
+/* ---------------------------FOOTER---------------------------------------------------*/
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+footer p {
+    color: var(--main-color);
+    opacity: .6;
+}
+
+/* footer::after{
+    content: '';
+    position: absolute;
     width: 100vw;
-    background: url(../_assets/_img/background.jpg) center / cover;
-    /* overflow: hidden; */
-}
+    height: 100vh;
+    opacity: .7;
+    bottom: 1;
+    z-index: -1;
+    background: url('/_assets/_img/bottom_img.jpg') center/cover no-repeat;
+} */
 
-.downimage{
-        background: url(../_assets/_img/background1.png) bottom / cover no-repeat;
-        height: 20vh;
-        width: 100vw;
-        position: absolute;
-        top: 80vh;
-}
-
-
+/* ------------------------------------------------------------------------------------*/
