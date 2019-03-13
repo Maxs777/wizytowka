@@ -139,7 +139,7 @@ nav > ul > li{
 }
 /* -------------------------HEADER */
 header{
-    background: url('/_assets/_img/background.jpg') center/cover no-repeat;
+    background: url('../_assets/_img/background.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -217,7 +217,7 @@ section:first-child figure{
 section:first-child figure::after {
     content: '';
     position: absolute;
-    background: url('/_assets/_img/about.jpg') center/cover no-repeat;
+    background: url('../_assets/_img/about.jpg') center/cover no-repeat;
     border-radius: 95px 0px 95px 0px;
     -moz-border-radius: 95px 0px 95px 0px;
     -webkit-border-radius: 95px 0px 95px 0px;
@@ -264,7 +264,7 @@ section:nth-child(3) div.row {
 section:nth-child(3) div.row::after {
     content: '';
     position: absolute;
-    background: url('/_assets/_img/bg-project.jpg') bottom/cover no-repeat;
+    background: url('../_assets/_img/bg-project.jpg') bottom/cover no-repeat;
     height: 100%;
     width: 100%;
     top: 0;
@@ -282,7 +282,7 @@ section:nth-child(3) div.row div {
     height: 50%;
     box-shadow: var(--box-shadow-property);
     justify-self: center;
-    background: var(--color-main-white) url('/_assets/_img/project.jpg') center/cover no-repeat;
+    background: var(--color-main-white) url('../_assets/_img/project.jpg') center/cover no-repeat;
     opacity: .9;
 }
 
@@ -303,7 +303,7 @@ section:last-child form{
 section:last-child form::after {
     content: '';
     position: absolute;
-    background: url('/_assets/_img/bottom_img.jpg') center/cover no-repeat;
+    background: url('../_assets/_img/bottom_img.jpg') center/cover no-repeat;
     height: 100%;
     width: 100%;
     top: 0;
@@ -358,7 +358,7 @@ section:last-child .contact-details ul li:nth-last-of-type(2):hover a i:nth-last
 section:last-child .contact-details::after {
     content: '';
     position: absolute;
-    background: url('/_assets/_img/contact.jpg') center/cover no-repeat;
+    background: url('../_assets/_img/contact.jpg') center/cover no-repeat;
     height: 100%;
     width: 100%;
     top: 0;
